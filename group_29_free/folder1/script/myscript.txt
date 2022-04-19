@@ -1,0 +1,38 @@
+
+#!bin/bash
+#qwer
+echo "Пример работы со скриптами"
+echo "Выйти из папки с файлом скрипта"
+cd ..
+echo "еще раз"
+cd ..
+echo "перейти в папку"
+cd folder1
+echo "В ней создаем три папки" 
+for number in 1,2,3 
+do	
+	mkdir -p test1
+	mkdir -p test2
+	mkdir -p test3 
+done 
+echo "----"
+cd test1 
+echo "Создаем файлы в первой папке" 
+echo "new text" >> test1.txt 
+echo "new text2" >> test2.txt
+echo "new text3" >> test3.txt
+echo "new text4" >> test4.json
+echo "new text5" >> test5.json
+echo "создаем еще три папки"
+for number in 1,2,3
+do
+        mkdir -p qa1
+        mkdir -p qa2
+        mkdir -p qa3
+done
+echo "выводим содержимое папки"
+ls
+echo "переносим любые два файла в любую папку"
+mv test1.txt qa1/test1.txt
+mv test2.txt qa1/test2.txt
+echo "конец"
