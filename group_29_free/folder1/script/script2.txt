@@ -1,1 +1,6 @@
-123
+
+#!bin/bash
+#realtime
+echo "Запуск" 
+tail -F test10.txt | grep 111 
+
