@@ -1,0 +1,135 @@
+HW_1. The first part
+Linux terminal (GitBash) commands
+
+1.Посмотреть где я :
+• pwd
+
+2.Создать папку:
+• mkdir folder1
+
+3.Зайти в папку:
+• cd folder1
+
+4.Создать 3 папки:
+•mkdir test1 test2 test3
+
+5.Зайти в любую папку:
+• cd test1
+
+6.Создать 5 файлов(3 txt ,2 json) :
+• cat > test1.txt
+• cat > test2.txt
+• cat > test3.txt
+• cat > test4.json
+• cat > test5.json
+
+7.Создать 3 папки:
+• mkdir qa1 qa2 qa3
+
+8.Вывести список содержимого папки:
+• ls (если со скрытыми файлами , то ls -la)
+
+9.+ Открыть любой txt файл:
+• start test1.txt (open,если в линуксе)
+10.+ написать туда что-нибудь, любой текст.
+• cat >> test1.txt
+- test (написал)
+- "push enter" (нажал ввод - сохранил последнюю строку)
+- ctrl + c
+11.Сохранить и выйти.
+
+12.Выйти из папки на уровень выше:
+• cd .. (назад)
+
+13.Переместить любые два файла ,которые вы создали , в любую другую папку:
+• mv test1/test1.txt test1/qa1/test1.txt
+• mv test1/test2.txt test1/qa1/test2.txt
+
+
+14.Скопировать любые 2 файла, которые вы создали, в любую другую папку:
+• cp test1/test4.json test1/qa1/test4.json
+• cp test1/test3.txt test1/qa1/test3.txt
+
+15.Найти файл по имени:
+• find . -name test1.txt
+
+16.просмотреть содержимое в реальном времени (команда grep) изучите как она работает:
+• grep test test1.txt
+
+17.Вывести несколько первых строк из текстового файла:
+• head -2 test1.txt- первые две строки с конца 
+
+18.Вывести несколько последних строк из текстового файла:
+• tail -2 test1.txt - последние две строки в файле показать
+
+19.Просмотреть содержимое длинного файла (команда less) изучите как она работает:
+• less test1.txt
+
+20.Вывести дату и время:
+• date
+
+
+Задание*:
+1.Отправить http запрос на сервер.
+
+•http://162.55.220.72:5005/terminal-hw-request
+-после ответа отправить такой запрос и получить нужный ответ.
+
+$ curl "http://162.55.220.72:5005/get_method?name=vladislav&age=25"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    19  100    19    0     0    165      0 --:--:-- --:--:-- --:--:--   166["vladislav","25"]
+
+
+2.Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:
+
+• скрипт:
+1)Создать папку с именем script 
+2)Создать в ней текстовый файл с помощью touch
+3)Назвать его myscript.txt
+4)Открыть его с помощью - nano myscript.txt
+5)Ввести :
+
+#!bin/bash
+#qwer
+echo "Пример работы со скриптами"
+echo "Выйти из папки с файлом скрипта"
+cd ..
+echo "еще раз"
+cd ..
+echo "перейти в папку"
+cd folder1
+echo "В ней создаем три папки"
+for number in 1,2,3
+do
+        mkdir -p test1
+        mkdir -p test2
+        mkdir -p test3
+done
+echo "----"
+cd test1
+echo "Создаем файлы в первой папке"
+echo "new text" >> test1.txt
+echo "new text2" >> test2.txt
+echo "new text3" >> test3.txt
+echo "new text4" >> test4.json
+echo "new text5" >> test5.json
+echo "создаем еще три папки"
+for number in 1,2,3
+do
+        mkdir -p qa1
+        mkdir -p qa2
+        mkdir -p qa3
+done
+echo "выводим содержимое папки"
+ls
+echo "переносим любые два файла в любую папку"
+mv test1.txt qa1/test1.txt
+mv test2.txt qa1/test2.txt
+echo "конец"
+
+п.с. Заводим скрипт с помощью - bash myscript.txt
+
+
+
+
