@@ -1,0 +1,133 @@
+TXT
+look the branches on my git
+1. Создать внешний репозиторий c названием TXT:
+
+	0)Initial data required for execution:
+		a)Create 3 folders for new git repositories with required name
+		b)cd TXT
+	
+1) echo "TXT" >> README.md
+2) git init
+3) git add README.md
+4) git commit -m "first commit"
+5) git branch -M main
+6) git remote add origin https://github.com/VladislavDunin/TXT.git
+7) git push -u origin main
+-----------------------------------------------------------------
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+	1)git clone https://github.com/VladislavDunin/TXT.git
+-----------------------------------------------------------------
+ 3. Внутри локального TXT создать файл “new.txt”.
+	1)touch new.txt
+-----------------------------------------------------------------
+ 4. Добавить файл под гит.
+	1)git add new.txt
+-----------------------------------------------------------------
+ 5. Закоммитить файл.
+	1)git commit -m "ver.1"
+-----------------------------------------------------------------
+ 6. Отправить файл на внешний GitHub репозиторий.
+	1)git push
+-----------------------------------------------------------------
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+	1)vim new.txt
+-----------------------------------------------------------------
+ 8. Отправить изменения на внешний репозиторий.
+	1)git push
+-----------------------------------------------------------------
+ 9. Создать файл preferences.txt
+	1)cat >> preferences.txt
+-----------------------------------------------------------------
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+	1)vim preferences.txt
+	2)
+	1.favorite movie" : Interstellar
+	2.favorite series" : One-piece, Dragon ball
+	3.favorite food" : burgers
+	4.favorite season" : summer
+	5.i'd like to visit country" : USA
+
+-----------------------------------------------------------------
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+	1)vim skills.txt
+	2)
+	What i learn at this_course:
+        1.Theory of software testing("testing","bug-reports","documentation","types of testing","methods","SDLC","STLC", and_etc),
+        2.What is a client server arhitechture
+        3.Server request methods
+        4.Server responses
+        5.Structure request and response
+        6.What is a Json,XML and structure them
+        7.Testing API
+        8.logs and reading logs
+        9.Postman,Fidler
+        10.VPN:how does it work and other
+        11.Dev Tools
+        12.Mobile testing
+        13.Gidelines iOS and Android
+        14.Building applications on Xcode
+        15.Building applications on Andoroid Studio
+        16.Sniffing on Charles
+        17.Proxy on Android and Iphone
+        18.Terminal and Linux Ubuntu 
+        19.Simple bash scripting , "Automatization of rouitne tasks
+        20.Access to remote servers
+        21.SQL:Create , Delete , Drop , Insert into , Select , From , Where ,
+        22.Git
+        23.Jmeter
+        24.Scrum
+        25.Phyton : creating your own client-server application
+-----------------------------------------------------------------
+ 12. Сделать коммит в одну строку.
+	1)git commit -a -m "ver.1.2"
+-----------------------------------------------------------------
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+	1) git push
+-----------------------------------------------------------------
+ 14. На веб интерфейсе создать файл bug_report.txt.
+	1) add file ---> create new file 
+-----------------------------------------------------------------
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	1)Commit changes
+-----------------------------------------------------------------
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+	1)Edit this file
+	2)
+	02.03.2022 Bug #3			
+	Project:			
+	Testing aliexpress			
+	issue type:			
+	Bug			
+			
+	Summary:
+	Корзина:при удалении товара  количество товаров на кнопке ''корзина'' не меняется"			
+			
+	Descripton:			
+	STR:			
+	1.Зайти в корзину с выбранным товаром			
+	2.Удалить его из корзины			
+	3.Обратить внимание на кнопку ''корзина''			
+			
+	Result:			
+	Корзина:при удалении товара  количество товаров на кнопке ''корзина'' не меняется			
+			
+	Expected result:			
+	При удалении товара из корзины,на кнопке ''корзина'' число добавленных товаров так же меняется на "0''			
+			
+	"Reporter" : Vladislav Dunin
+			
+	Priority: low 			
+	Severity : low			
+
+	Attachment:			
+		
+	Linked issues :			
+	Relates to : 			
+	Sprint: На котором необходимо пофиксить этот баг			
+-----------------------------------------------------------------
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	1)Нажать Commit changes
+-----------------------------------------------------------------
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+	1)git pull
+-----------------------------------------------------------------
