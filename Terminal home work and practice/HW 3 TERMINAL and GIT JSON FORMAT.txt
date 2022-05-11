@@ -1,0 +1,141 @@
+HW3 Terminal/git 
+look the branches on my git
+JSON:
+ 4. Создать внешний репозиторий c названием JSON :
+	0)Initial data required for execution:
+		a)Create 3 folders for new git repositories with 		required name
+		b)cd JSON
+
+1) echo "JSON" >> README.md
+2) git init
+3) git add README.md
+4) git commit -m "first commit"
+5) git branch -M main
+6) git remote add origin https://github.com/VladislavDunin/JSON.git
+7) git push -u origin main
+-----------------------------------------------------------------
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+1)git clone https://github.com/VladislavDunin/JSON.git
+-----------------------------------------------------------------
+ 6. Внутри локального JSON создать файл “new.json”.
+1) touch new.json
+-----------------------------------------------------------------
+ 7. Добавить файл под гит.
+1) git add new.json
+-----------------------------------------------------------------
+ 8. Закоммитить файл.
+1)git commit -m "ver.1"
+-----------------------------------------------------------------
+ 9. Отправить файл на внешний GitHub репозиторий.
+1)git push
+-----------------------------------------------------------------
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+1)vim new.json 
+2)
+{
+        "full_name" : "Vladislav Dunin",
+        "age" : 25,
+        "pets" : "one cat",
+        "desired_salary" : "for junior position" : 500 $
+}
+
+-----------------------------------------------------------------
+ 11. Отправить изменения на внешний репозиторий.
+1)git add new.json
+2)git commit -m "ver.1.1"
+3)git push
+-----------------------------------------------------------------
+ 12. Создать файл preferences.json
+1)cat > preferences.json
+-----------------------------------------------------------------
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате JSON.
+1) vim preferences.json
+2) 
+{
+	"favorite movie" : "Interstellar",
+	"favorite series" : "One-piece", "Dragon ball",
+	"favorite food" : "burgers",
+	"favorite season" : "summer",
+	"i'd like to visit country" : "USA"
+}
+-----------------------------------------------------------------
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+1) vim skills.json
+2)
+{
+        "What_i_learn_at_this_course":
+        "1" : "Theory of software testing":("testing","bug-reports","documentation","types of testing","methods","SDLC","STLC", "and_etc"),
+        "2" : "What is a client server arhitechture",
+        "3" : "Server request methods",
+        "4" : "Server responses",
+        "5" : "Structure request and response",
+        "6" : "What is a Json,XML and structure them",
+        "7" : "Testing API",
+        "8" : "logs and reading logs",
+        "9" : "Postman","Fidler",
+        "10": "VPN":"how does it work and other",
+        "11": "Dev Tools" ,
+        "12": "Mobile testing",
+        "13": "Gidelines iOS and Android",
+        "14": "Building applications on Xcode",
+        "15": "Building applications on Andoroid Studio",
+        "16": "Sniffing on Charles",
+        "17": "Proxy on Android and Iphone",
+        "18": "Terminal and Linux Ubuntu ",
+        "19": "Simple bash scripting" , "Automatization of rouitne tasks",
+        "20": "Access to remote servers",
+        "21": "SQL":"Create , Delete , Drop , Insert into , Select , From , Where ",
+        "22": "Git",
+        "23": "Jmeter",
+        "24": "Scrum",
+        "25": "Phyton" : "creating your own client-server application"
+
+}
+
+-----------------------------------------------------------------
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+1) git add .
+2) git commit -a -m "version 1"
+3) git push
+-----------------------------------------------------------------
+ 16. На веб интерфейсе создать файл bug_report.json.
+1) add file bug_report.json
+2) commit new file
+-----------------------------------------------------------------
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+1) commit new file
+-----------------------------------------------------------------
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+1)
+{
+  "02.03.2022" ,"Bug #3",			
+  "Project":			
+  "Testing aliexpress",			
+  "issue type": "bug",			
+  			
+			
+  "Summary":
+  "Корзина":"при удалении товара  количество товаров на кнопке": "корзина", "не меняется",			
+			
+  "Descripton":			
+  "STR":			
+  "1.Зайти в корзину с выбранным товаром",			
+  "2.Удалить его из корзины",			
+  "3.Обратить внимание на кнопку ":"корзина" ,			
+			
+  "Result":			
+  "Корзина":"при удалении товара  количество товаров на кнопке" :"корзина" , "не меняется",			
+			
+  "Expected result":			
+  "При удалении товара из корзины,на кнопке" :"корзина", "число добавленных товаров так же меняется на 0 ",			
+			
+  "Reporter" : "Vladislav Dunin",			
+  "Priority":" low ",			
+  "Severity" :" low ",			
+  "Attachment":	"screenshot with my bug",					
+  "Linked issues" :			
+  "Relates to" : 			
+  "Sprint": "На котором необходимо пофиксить этот баг"			
+}
+
+-----------------------------------------------------------------
