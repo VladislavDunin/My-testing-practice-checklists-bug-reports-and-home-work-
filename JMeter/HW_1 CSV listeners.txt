@@ -1,0 +1,22 @@
+
+https://drive.google.com/drive/folders/1fpYllwd1pZSDCFb-yRPgVlbsXMIcRG8m
+===============================
+1.number of threads (users) : 50
+Ramp-up period (seconds) : 2
+Loop count : 1
+2.number of threads (users) : 50
+Ramp-up period (seconds) : 2
+Loop count : 10
+3.number of threads (users) : 250
+Ramp-up period (seconds) : 2
+Loop count : 1
+4.number of threads (users) : 250
+Ramp-up period (seconds) : 2
+Loop count : 10
+5.number of threads (users) : 500
+Ramp-up period (seconds) : 2
+Loop count : 1
+6.number of threads (users) : 500
+Ramp-up period (seconds) : 2
+Loop count : 10
+=================================
