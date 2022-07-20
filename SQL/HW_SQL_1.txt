@@ -1,0 +1,41 @@
+1.	Select all records where the City column has the value "Berlin".
+SELECT * FROM Customers WHERE City = 'Berlin';
+2.	Select CustomerName, City where the CustomerID column has the value 32.
+SELECT CustomerName, City  FROM Customers WHERE CustomerID = '32';
+3.	Select all records where the City column has the value 'Berlin' and the PostalCode column has the value 12209.
+SELECT *  FROM Customers WHERE City = 'Berlin' AND PostalCode = 12209;
+4.	Select 3 first rows of the CustomerName, City and Country columns
+SELECT CustomerName, City, Country FROM Customers LIMIT 3;
+5.	Select all records where the City column has the value 'Berlin', and also the records where the City column has the value 'London'.
+SELECT * FROM Customers WHERE City = 'Berlin' OR City = 'London';
+6.	Select CustomerName, Address, City from the Customers table, sort the result alphabetically by the column City.
+SELECT CustomerName, Address, City FROM Customers ORDER BY City;
+7.	Select all records from the Customers table, sort the result alphabetically, first by the column Country, then, by the column City
+SELECT * FROM Customers ORDER BY Country, City;
+8.	Select all records from the Customers where the PostalCode column is empty.
+SELECT * FROM Customers WHERE PostalCode = "" ;
+9.	Select CustomerID, CustomerName, PostalCode from the Customers where the PostalCode column is NOT empty.
+SELECT CustomerID, CustomerName, PostalCode FROM Customers WHERE NOT PostalCode = "" ;
+10.	Select all the different values from the Country column in the Customers table.
+SELECT DISTINCT Country FROM Customers;
+11.	Select all records where the value of the City column starts with the letter "a".
+SELECT * FROM Customers WHERE City LIKE 'a%';
+12.	Select all records where the value of the City column contains the letter "a" and sort by City in descending order.
+SELECT * FROM Customers WHERE City LIKE '%a%' ORDER BY City DESC;
+13.	Select all records where the value of the City column starts with letter "a" and ends with the letter "b".
+SELECT * FROM Customers WHERE City LIKE 'a%b';
+14.	Select all records where the value of the City column does NOT start with the letter "a" and where Country is not Germany.
+SELECT * FROM Customers WHERE City NOT LIKE 'a%' AND Country NOT LIKE "Germany";
+15.	Use the IN operator to select all the records where Country is either "Norway" or "France".
+SELECT * FROM Customers WHERE Country IN ("Norway", "France");
+16.	Select all records from the City of “Bern”, "Berlin", "London" where IDs are greater than 10, but less than 30
+SELECT * FROM Customers WHERE CITY IN ("Bern", "Berlin", "London") AND CustomerID BETWEEN 11 AND 29 ;
+17.	Update the City column of all records in the Customers table.
+UPDATE Customers SET City = "Minsk";
+18.	Set the value of the City columns to 'Oslo', but only the ones where the Country column has the value "Norway".
+UPDATE Customers SET City = "Oslo" WHERE City = "Norway";
+19.	Update the City value and the Country value for the Customer with ID = 32.
+UPDATE Customers SET City = "Minsk", Country = "Belarus" WHERE CustomerID = 32;
+20.	Delete all the records from the Customers table where the Country value is 'Norway'.
+DELETE FROM Customers WHERE Country = "Norway";
+
